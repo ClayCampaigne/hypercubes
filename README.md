@@ -1,3 +1,13 @@
 # hypercubes
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?filepath=https%3A%2F%2Fgithub.com%2FClayCampaigne%2Fhypercubes%2Fblob%2Fmaster%2Fndcubes.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD)
+
 Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplot
+(only works on a computer web browser).
+
+I still can't figure out why I can't directly link to the notebook. 
+
+Run all the cells by going to kernel menu -> Restart and Run All.
+
+You can find ndims in cell #7 to change the dimensionality of the cube for now.
+
+The i'th slider rotates the first dimension into the i+1th dimemension.
