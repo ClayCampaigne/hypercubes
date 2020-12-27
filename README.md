@@ -4,8 +4,8 @@
 Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplot
 (only works on a computer web browser).
 
-I still can't figure out why I can't directly link to the notebook. 
-Click the "launch binder" link, then click ndcubes.ipynb to open.
+Click the "launch binder" link, then click ndcubes.ipynb to open 
+(I still can't figure out why I can't directly link to the notebook).
 
 Run all the cells by going to Kernel menu -> Restart and Run All.
 
