@@ -5,8 +5,9 @@ Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplo
 (only works on a computer web browser).
 
 I still can't figure out why I can't directly link to the notebook. 
+Click the binder link, then click ndcubes.ipynb to open.
 
-Run all the cells by going to kernel menu -> Restart and Run All.
+Run all the cells by going to Kernel menu -> Restart and Run All.
 
 You can find ndims in cell #7 to change the dimensionality of the cube for now.
 
