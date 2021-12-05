@@ -1,5 +1,5 @@
 # hypercubes
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?urlpath=/tree/)
 
 Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplot.
 
