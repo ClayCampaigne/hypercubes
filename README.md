@@ -1,11 +1,10 @@
 # hypercubes
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?urlpath=/tree/)
 
-Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplot
-(only works on a computer web browser).
+Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplot.
 
-I still can't figure out why I can't directly link to the notebook. 
-Click the "launch binder" link, then click ndcubes.ipynb to open.
+Click the "launch binder" link, wait for the remote virtual machine to be built, then click ndcubes.ipynb to open 
+(The online/binder version only works on a computer web browser. I still can't figure out why I can't directly link to the notebook).
 
 Run all the cells by going to Kernel menu -> Restart and Run All.
 
