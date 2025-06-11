@@ -41,6 +41,9 @@ class HypercubeWidget:
         # Set up controls
         self._setup_controls()
         
+        # Apply initial rotations for better default view
+        self._apply_initial_rotations()
+        
         # Create the complete widget
         self._create_widget()
         
@@ -94,22 +97,40 @@ class HypercubeWidget:
         self.rotation_sliders = []
         self.slider_values = []
         
+        # Default rotation values for 4D cube to look more interesting
+        default_rotations = [1.4, 3.7, 4.6] if self.ndims == 4 else [0.0] * (self.ndims - 1)
+        
         for i in range(self.ndims - 1):
+            initial_value = default_rotations[i] if i < len(default_rotations) else 0.0
             slider = FloatSlider(
-                min=0, max=2*np.pi, step=0.1, value=0,
+                min=0, max=2*np.pi, step=0.1, value=initial_value,
                 description=f'Rotate 0→{i+1}:',
                 style={'description_width': 'initial'},
                 readout_format='.2f'
             )
             slider.observe(self._update_plot, 'value')
             self.rotation_sliders.append(slider)
-            self.slider_values.append(0.0)
+            self.slider_values.append(initial_value)
     
     def _create_widget(self):
         """Create the complete widget layout."""
         controls = [self.ndims_slider] + self.rotation_sliders
         self.controls_box = VBox(controls)
         self.widget = VBox([self.figure, self.controls_box])
+    
+    def _apply_initial_rotations(self):
+        """Apply initial rotations to make the default view more interesting."""
+        for i, slider in enumerate(self.rotation_sliders):
+            if slider.value != 0.0:
+                rotation_matrix = rotmat(0, i+1, slider.value, self.ndims)
+                self.cube.lintransform(rotation_matrix)
+        
+        # Update the visualization with rotated cube
+        newproj = self.cube.parproject()
+        for i in range(len(self.lines)):
+            if i < len(newproj):
+                self.lines[i].x = [elem[0] for elem in newproj[i]]
+                self.lines[i].y = [elem[1] for elem in newproj[i]]
     
     def _on_ndims_change(self, change):
         """Handle dimension change."""
