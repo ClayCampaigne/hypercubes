@@ -1,13 +1,22 @@
 # hypercubes
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?urlpath=/tree/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?filepath=ndcubes.ipynb)
 
-Manipulating n-dimensional solids (wireframes for now) with ipywidgets and bqplot.
+Interactive n-dimensional hypercube visualization using ipywidgets and bqplot.
 
-Click the "launch binder" link, wait for the remote virtual machine to be built, then click ndcubes.ipynb to open 
-(The online/binder version only works on a computer web browser. I still can't figure out why I can't directly link to the notebook).
+Click the "launch binder" link above to open the notebook directly in your browser. Wait for the environment to build, then run the cells to start exploring hypercubes!
 
-Run all the cells by going to Kernel menu -> Restart and Run All.
+## Features
 
-You can find ndims in cell #7 to change the dimensionality of the cube for now.
+- **Dynamic dimension selection**: Use the dimension slider to switch between 2D to 8D hypercubes in real-time
+- **Interactive rotation controls**: Each slider rotates dimension 0 into dimension i+1
+- **Clean modular architecture**: All core functionality organized in proper Python modules
+- **Multiple examples**: From simple 4D cubes to complex 6D+ visualizations
 
-The i'th slider rotates the first dimension into the i+1th dimemension.
+## Usage
+
+1. Run all cells with "Kernel → Restart and Run All"
+2. Use the dimension slider to select 2-8 dimensions
+3. Manipulate the rotation sliders to explore the hypercube from different angles
+4. Try the different examples to see various configurations
+
+The visualization works best on desktop browsers with adequate screen space for the interactive widgets.
