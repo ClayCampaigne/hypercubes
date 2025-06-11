@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: hypercubes
+Version: 0.1.0
+Summary: Interactive n-dimensional hypercube visualization using ipywidgets and bqplot
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: jupyterlab>=4.0.0
+Requires-Dist: ipykernel>=6.0.0
+Requires-Dist: ipython>=8.0.0
+Requires-Dist: ipywidgets>=8.0.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: bqplot>=0.12.30
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Requires-Dist: isort>=5.10.0; extra == "dev"
