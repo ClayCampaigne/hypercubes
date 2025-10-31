@@ -1,9 +1,9 @@
 # hypercubes
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?filepath=ndcubes.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ClayCampaigne/hypercubes/HEAD?urlpath=voila/render/ndcubes.ipynb)
 
 Interactive n-dimensional hypercube visualization using ipywidgets and bqplot.
 
-Click the "launch binder" link above to open the notebook directly in your browser. Wait for the environment to build, then run the cells to start exploring hypercubes!
+Click the "launch binder" link above to open the interactive app in your browser. Wait for the environment to build, then start exploring hypercubes!
 
 ## Features
 
@@ -14,9 +14,9 @@ Click the "launch binder" link above to open the notebook directly in your brows
 
 ## Usage
 
-1. Run all cells with "Kernel → Restart and Run All"
+1. Click the Binder badge to launch the app
 2. Use the dimension slider to select 2-8 dimensions
 3. Manipulate the rotation sliders to explore the hypercube from different angles
-4. Try the different examples to see various configurations
+4. Scroll down to see additional examples with different configurations
 
 The visualization works best on desktop browsers with adequate screen space for the interactive widgets.
